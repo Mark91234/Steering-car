@@ -6,22 +6,22 @@ LiquidCrystal_I2C lcd(0x27,16,2);     //display type
 int servoPin = 11;        // servoo
 Servo myservo;
 
-int move_button = 5;     // Move / direction button
+int move_button = 3;     // Move / direction button
 int print_button = A2;   // Print button
 
 int servo_potentiometer= A0;      // Servo control potentiometer
 int speed_potentiometer = A1;      // Speed control potentiometer
 
-int trigR = 7;
-int echoR = 8;
+int trigR = 10;
+int echoR = 2;
 int trigL = 12;
 int echoL = 13;
 
 int in1 = 4;        //dcmotor 1 
-int in2 = 9;
-int in3 = 10;          //dcmotor 2 
-int in4 = 2;
-int ena = 6;    // speed of dc motor 1
+int in2 = 7;
+int in3 = 6;          //dcmotor 2 
+int in4 = 5;
+int ena = 9;    // speed of dc motor 1
 int enb = 3;    // speed of dc motor 2 
 
 int speed_potentiometer_reading;        //potentiometer speed storing unit 
